@@ -1,0 +1,36 @@
+body{
+  padding: 0;
+  margin: : 0;
+  font-family: helvetica;
+}
+#partialHeaderContainer {
+  top: 0; right: 0; left: 0; bottom: 0;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: purple;
+}
+#homePageHeading {
+  color: darkblue;
+  text-transform: uppercase;
+}
+.homePageContainer{
+  position: absolute;
+  right: 0; left: 0; bottom: 0;
+  flex-direction: row;
+  background-color: blue;
+  text-align: center;
+}
+.homeBtnContainer{
+  display: flex;
+  flex-direction: row;
+}
+.homeBtn {
+  padding: 2%;
+  background-color: purple;
+  color: yellow
+}
+.homeBtn:hover {
+  background-color: pink;
+  color: black;
+}

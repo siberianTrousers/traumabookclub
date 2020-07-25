@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-no">
     {{ $css := "css/bootstrap.min.css" | absURL }}
     <link rel="stylesheet" href="{{ $css }}">
-    <title></title>
+    <title>{{ .Title }}</title>
   </head>
   <body>
+    {{ partial "header/header.html" . }}
 
-<div class="homeBlock">
-  <h1>Trauma Book Club</h1>
-  <hr>
-  <a style=" color: blue;" href="#">r/CPTSD_Bookclub</a><br>
-  <a href="#">Patreon</a><br>
-  <a href="#">Get Book</a><br>
-</div>
-
+    <div class="homePageContainer">
+    <hr>
+    <br>
+    <div id="homeBtnContainer">
+      <a class="homeBtn" href="#">r/CPTSD_Bookclub</a>
+      <a class="homeBtn" href="#">Patreon</a>
+      <a class="homeBtn" href="#">Get Book</a>
+    </div>
+    </div>
 
   </body>
 </html>
