@@ -3,26 +3,41 @@
 <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{ $flexcss := "css/flex.css" | absURL }}
+
     {{ $css := "css/bootstrap.min.css" | absURL }}
-    <link rel="stylesheet" href="{{ $flexcss }}">
     <link rel="stylesheet" href="{{ $css }}">
+
+    {{ $javascript := "javascript/javascript.js" }}
+    <script src="$javascript"></script>
+
     <title id="partialHead">{{ .Title }}</title>
 </head>
 <body>
   <div id="homePageContainer" class="flex-container-centered">
-    <ul id="homePageMenuNav" role="navigation">
-      <li class="siteHeaderLogo"><a href="#">Trauma Book Club</a></li>
-      <li class="menuNavLink"><a href="main/faq">FAQ</a></li>
-      <li class="menuNavLink"><a href="main/about">About Us</a></li>
-    </ul>
-    <div id="homeBtnContainer" class="flex-container-centered">
-      <p id="homeMissionStatement"></p>
-      <a class="homeBtn flex-container-centered" href="https://www.reddit.com/r/TraumaBookClub/" target="_blank">SR</a>
-      <a class="homeBtn flex-container-centered" href="https://www.patreon.com/cptsdbookclub" target="_blank">$$</a>
-      <a class="homeBtn flex-container-centered" href="https://docs.google.com/forms/d/e/1FAIpQLSdsAixFJn9p6v82Ed2Z9BEw-ERnZuTW6LN6wQRucPrSKDdUQA/viewform" target="_blank">BD</a>
-    </div>
-  </div>
+    <main id="homePageContentContainer">
+      <ul id="homePageMenuNav" role="navigation">
+        <li class="siteHeaderLogo"><a href="#">Trauma Book Club</a></li>
+        <li class="menuNavLink"><a href="main/faq">FAQ</a></li>
+        <li class="last-nav-link"><a href="main/about">About Us</a></li>
+      </ul>
 
+      <div id="homePageSideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Trauma Book Club</a>
+        <a href="main/faq">FAQ</a>
+        <a href="main/about">About Us</a>
+      </div>
+
+      <span id="homePageSideNavBtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <div id="homeBtnContainer" class="flex-container-centered">
+        <p id="homeMissionStatement"></p>
+        <a class="homeBtn flex-container-centered" href="https://www.reddit.com/r/TraumaBookClub/" target="_blank">SR</a>
+        <a class="homeBtn flex-container-centered" href="https://www.patreon.com/cptsdbookclub" target="_blank">$$</a>
+        <a class="homeBtn flex-container-centered" href="https://docs.google.com/forms/d/e/1FAIpQLSdsAixFJn9p6v82Ed2Z9BEw-ERnZuTW6LN6wQRucPrSKDdUQA/viewform" target="_blank">BD</a>
+      </div>
+    </main>
+  </div>
+  {{ partial "footer/footer.html" . }}
 </body>
 </html>
