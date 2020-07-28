@@ -16,13 +16,21 @@ body{
   text-transform: uppercase;
 }
 #homePageMenuNav{
-
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  align-items: baseline;
+  padding: 10%;
 }
 #homePageMenuNav h1{
-
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 #homePageMenuNav a{
-
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 #homePageContainer{
   position: absolute;
