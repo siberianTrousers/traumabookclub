@@ -4,6 +4,7 @@ body{
   font-family: helvetica;
   background-color: #D7F7F5;
 }
+/* main css */
 #partialHeaderContainer {
   top: 0; right: 0; left: 0;
   padding-top: 5%;
@@ -12,25 +13,28 @@ body{
   background-color: purple;
   margin: 0;
 }
-#homePageHeading {
-  color: darkblue;
+#homePageMenuNav {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  width: 880px;
+  background-color: yellow;
+}
+
+#homePageMenuNav li{
+  padding: 10px;
+  background-color: green;
   text-transform: uppercase;
 }
-#homePageMenuNav{
-  display: flex;
-  flex-direction: row;
-  background-color: #02E08B;
-  align-items: baseline;
-  width: 1000px;
 
+#homePageMenuNav li:hover{
+  background-color: purple;
 }
-#homePageMenuNav h1{
-  margin-bottom: 15px;
 
-}
 #homePageMenuNav a{
-
+  text-decoration: none;
 }
+
 #homePageContainer{
   position: absolute;
   top: 0; bottom: 0; right: 0; left: 0;
@@ -57,5 +61,73 @@ body{
 .homeBtn:hover {
   background-color: #CDBCEB;
   color: black;
+}
 
+.siteHeaderLogo{
+  margin-right: auto;
+  margin-left: -39px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.menuNavLink{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+/* media queries */
+
+
+
+
+
+/* Phones */
+@media only screen and (min-width: 320px) {
+  body {
+    background-color: red;
+  }
+}
+/* Smaller tablets */
+@media only screen and (min-width: 481px) {
+  body {
+    background-color: blue;
+  }
+}
+/* Portrait tablets */
+@media only screen and (min-width: 641px) {
+  body {
+    background-color: pink;
+  }
+}
+/* Landscape tablets */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: yellow;
+  }
+}
+/* Laptops/smaller desktops */
+@media only screen and (min-width: 1025px) {
+  body {
+    background-color: maroon;
+  }
+}
+/* Desktops */
+@media only screen and (min-width: 1281px) {
+  body {
+    background-color: gray;
+  }
+  #homePageMenuNav {
+    width: 60%;
+    background-color: blue;
+  }
+  #homeBtnContainer{
+    background-color: #F0AE9F;
+    width: 60%;
+    /* border: 2px rgba(25, 200, 70, 0.5) solid; */
+  }
 }
