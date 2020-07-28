@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ $flexcss := "css/flex.css" | absURL }}
     {{ $css := "css/bootstrap.min.css" | absURL }}
+    <link rel="stylesheet" href="{{ $flexcss }}">
     <link rel="stylesheet" href="{{ $css }}">
     <title id="partialHead">{{ .Title }}</title>
 </head>
@@ -11,7 +13,7 @@
   <div id="homePageContainer" class="flex-container-centered">
     <div id="homePageMenuNav">
         <div class="flex-start homePageMenuNavTitle">
-          <a href="#"><h1>Trauma Book Club</h1></a> 
+          <a href="#"><h1>Trauma Book Club</h1></a>
         </div>
        <div class="flex-end homePageMenuNavLinks">
          <a href="main/about">About Us</a>

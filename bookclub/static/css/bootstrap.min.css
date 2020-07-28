@@ -2,6 +2,7 @@ body{
   padding: 0;
   margin: : 0;
   font-family: helvetica;
+  background-color: #D7F7F5;
 }
 #partialHeaderContainer {
   top: 0; right: 0; left: 0;
@@ -18,19 +19,17 @@ body{
 #homePageMenuNav{
   display: flex;
   flex-direction: row;
-  background-color: red;
+  background-color: #02E08B;
   align-items: baseline;
-  padding: 10%;
+  width: 1000px;
+
 }
 #homePageMenuNav h1{
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  margin-bottom: 15px;
+
 }
 #homePageMenuNav a{
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+
 }
 #homePageContainer{
   position: absolute;
@@ -40,11 +39,9 @@ body{
 }
 #homeBtnContainer{
   background-color: #F0AE9F;
-  margin-left: 15%;
-  margin-right: 15%;
   flex-wrap: nowrap;
   padding: 10%;
-  border: 2px rgba(25, 200, 70, 0.5) solid;
+  /* border: 2px rgba(25, 200, 70, 0.5) solid; */
 }
 .homeBtn {
   margin: 50px;
@@ -61,17 +58,4 @@ body{
   background-color: #CDBCEB;
   color: black;
 
-}
-.flex-container-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.flex-start{
-  display: flex;
-  justify-content: flex-start;
-}
-.flex-end{
-  display: flex;
-  justify-content: flex-end;
 }

@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{ $flexcss := "css/flex.css" | absURL }}
   {{ $css := "css/bootstrap.min.css" | absURL }}
+  <link rel="stylesheet" href="{{ $flexcss }}">
   <link rel="stylesheet" href="{{ $css }}">
 </head>
   <body>
