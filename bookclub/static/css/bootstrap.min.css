@@ -126,20 +126,43 @@ body{
     justify-content: center;
   }
   #homePageMenuNav {
-    display: flex;
-    flex-flow: column nowrap;
+    display: none;
+  }
+  .sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: green;
+    white-space: pre;
+    text-align: left;
+  }
+  .sideNav a {
+    display: block;
+    padding-left: 15px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  .sideNav a:hover {
+    color: white;
+  }
+  .sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+  }
+  #homePageSideNavBtnContainer {
     width: 100%;
-    padding: 0;
+    text-align: left;
   }
-  #homePageMenuNav li{
-    height: 5%;
-    border-bottom: 1px black solid;
-  }
-  .siteHeaderLogo {
-    margin: 0;
-  }
-  .menuNavLink {
-    margin: 0;
+  #homePageSideNavBtn {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #homeBtnContainer{
     background-color: rgba(198, 227, 196, 0.8);
@@ -172,6 +195,22 @@ body{
   #homePageContentContainer{
     min-width: 635px;
     width: 45%;
+  }
+  #homePageMenuNav {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 0;
+  }
+  #homePageMenuNav li{
+    height: 5%;
+    border-bottom: 1px black solid;
+  }
+  .siteHeaderLogo {
+    margin: 0;
+  }
+  .menuNavLink {
+    margin: 0;
   }
   .homeBtn {
     margin: 50px;

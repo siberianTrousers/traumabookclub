@@ -7,9 +7,6 @@
     {{ $css := "css/bootstrap.min.css" | absURL }}
     <link rel="stylesheet" href="{{ $css }}">
 
-    {{ $javascript := "javascript/javascript.js" }}
-    <script src="$javascript"></script>
-
     <title id="partialHead">{{ .Title }}</title>
 </head>
 <body>
@@ -22,13 +19,15 @@
       </ul>
 
       <div id="homePageSideNav" class="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:35px;cursor:pointer">&times;</a>
         <a href="#">Trauma Book Club</a>
         <a href="main/faq">FAQ</a>
         <a href="main/about">About Us</a>
       </div>
 
-      <span id="homePageSideNavBtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <div id="homePageSideNavBtnContainer">
+        <span id="homePageSideNavBtn" style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
 
       <div id="homeBtnContainer" class="flex-container-centered">
         <p id="homeMissionStatement"></p>
@@ -39,5 +38,8 @@
     </main>
   </div>
   {{ partial "footer/footer.html" . }}
+
+  {{ $script := "js/javascript.js" | absURL }}
+  <script src="{{ $script }}"></script>
 </body>
 </html>
