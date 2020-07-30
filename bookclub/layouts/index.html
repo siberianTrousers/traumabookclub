@@ -12,25 +12,27 @@
 <body>
   <div id="homePageContainer" class="flex-container-centered">
     <main id="homePageContentContainer">
+      <!-- Normal screen nav -->
       <ul id="homePageMenuNav" role="navigation">
-        <li class="siteHeaderLogo"><a href="#">Trauma Book Club</a></li>
+        <li class="siteHeaderLogo"><a href="/">Trauma Book Club</a></li>
         <li class="menuNavLink"><a href="main/faq">FAQ</a></li>
         <li class="last-nav-link"><a href="main/about">About Us</a></li>
       </ul>
 
+      <!-- Hidden nav drawer for smaller screens -->
       <div id="homePageSideNav" class="sideNav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:35px;cursor:pointer">&times;</a>
-        <a href="#">Trauma Book Club</a>
         <a href="main/faq">FAQ</a>
         <a href="main/about">About Us</a>
       </div>
-
       <div id="homePageSideNavBtnContainer">
         <span id="homePageSideNavBtn" style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span id="homePageSideNavSiteLogo" class="siteHeaderLogo"><a href="#">Trauma Book Club</a></span>
       </div>
 
+      <!-- Main content for Homepage -->
       <div id="homeBtnContainer" class="flex-container-centered">
-        <p id="homeMissionStatement"></p>
+        <p id="homeMissionStatement">THIS IS THE MISSION STATEMENT</p>
         <a class="homeBtn flex-container-centered" href="https://www.reddit.com/r/TraumaBookClub/" target="_blank">SR</a>
         <a class="homeBtn flex-container-centered" href="https://www.patreon.com/cptsdbookclub" target="_blank">$$</a>
         <a class="homeBtn flex-container-centered" href="https://docs.google.com/forms/d/e/1FAIpQLSdsAixFJn9p6v82Ed2Z9BEw-ERnZuTW6LN6wQRucPrSKDdUQA/viewform" target="_blank">BD</a>

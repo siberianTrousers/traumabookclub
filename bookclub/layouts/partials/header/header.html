@@ -8,8 +8,21 @@
   </head>
 
   <body>
-    <header id="partialHeaderContainer">
-        <h1 id="homePageHeading">Trauma Book Club</h1>
-    </header>
+    <ul id="homePageMenuNav" role="navigation">
+      <li class="siteHeaderLogo"><a href="#">Trauma Book Club</a></li>
+      <li class="menuNavLink"><a href="main/faq">FAQ</a></li>
+      <li class="last-nav-link"><a href="main/about">About Us</a></li>
+    </ul>
+
+    <!-- Hidden nav drawer for smaller screens -->
+    <div id="homePageSideNav" class="sideNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:35px;cursor:pointer">&times;</a>
+      <a href="main/faq">FAQ</a>
+      <a href="main/about">About Us</a>
+    </div>
+    <div id="homePageSideNavBtnContainer">
+      <span id="homePageSideNavBtn" style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <span id="homePageSideNavSiteLogo" class="siteHeaderLogo"><a href="#">Trauma Book Club</a></span>
+    </div>
   </body>
 </html>

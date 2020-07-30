@@ -4,10 +4,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("homePageSideNav").style.width = "0";
 }
-
-$(document).ready(function() {
-  $("homePageSideNavBtn").click(function(){
-    $("homePageContentContainer").hide();
-  })
-
-})
