@@ -13,6 +13,10 @@ body{
   margin-right: 0px;
 }
 
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
 
 /* PARTIAL CSS */
 #partialHeaderContainer {
@@ -82,7 +86,7 @@ body{
   text-align: center;
   flex-direction: column;
 }
-/* #homeBtnContainer{
+/* .content{
   background-color: #F0AE9F;
   flex-wrap: nowrap;
   padding: 10%;
@@ -100,11 +104,20 @@ body{
   border: 1px #91756C solid;
 } */
 .homeBtn:hover {
-  background-color: #CDBCEB;
-  color: black;
+  background-color: #476F73;
+  border: 2px #446A6E solid;
+  color: #F2F2F2;
 }
 
-
+#homeMissionStatement {
+  background-color: rgba(242, 242, 242, .6);
+  border-radius: .50em;
+  width: 85%;
+  font-style: italic;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 14px;
+}
 
 
 
@@ -165,6 +178,8 @@ body{
   #homePageSideNavBtn {
     padding-left: 10px;
     padding-right: 10px;
+    font-size:35px;
+    cursor:pointer
   }
   .siteHeaderLogo {
     margin-right: 0;
@@ -177,34 +192,45 @@ body{
     color: black;
     text-decoration: none;
   }
-  #homeBtnContainer{
+  .content {
     display: flex;
     flex-direction: column;
     background-color: rgba(198, 227, 196, 0.8);
     height: 90%;
     margin: 0;
-  }
-  #homeBtnContainer {
     justify-content: flex-start;
-
   }
+
   .homeBtn {
     padding:5%;
-    width: 80%;
-    height: 130px;
-    margin: 20px;
-    background-color: gold;
+    width: 70%;
+    height: 25px;
+    margin-top: 50px;
+    background-color: #517E82;
+    border: 2px #4D797D solid;
+    border-radius: .25em;
+    text-decoration: none;
+    box-shadow: 5px 8px 15px -5px #335237;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 540;
+    letter-spacing: 3px;
   }
+
 }
 
 /* Smaller tablets */
 @media only screen and (min-width: 481px) {
-  body {
-    background-color: blue;
-  }
   .siteHeaderLogo {
     margin-top: 12px;
     font-size: 20px;
+  }
+  #homeMissionStatement {
+    margin-bottom:20px;
+    font-size: 17px;
+  }
+  .homeBtn {
+    width: 50%;
   }
 }
 
@@ -213,46 +239,28 @@ body{
   body {
     background-color: pink;
   }
-  #homePageSideNav {
-    display: none;
-  }
   #homePageSideNavBtn {
-    display: none;
-  }
-  #homePageSideNavSiteLogo {
-    display: none;
-  }
-  #homePageContentContainer {
-    min-width: 635px;
-    width: 45%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-  }
-  #homePageMenuNav {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    padding: 0;
-  }
-  #homePageMenuNav li{
-    height: 5%;
-    border-bottom: 1px black solid;
+    font-size: 45px;
   }
   .siteHeaderLogo {
-    margin: 0;
+    margin-top: 19px;
+    font-size: 30px;
   }
-  .menuNavLink {
-    margin: 0;
+  #homePageContentContainer {
+    /* min-width: 635px;
+    width: 45%; */
+    /* display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center; */
   }
-  #homeBtnContainer {
+
+  .content {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    height: 450px;
-    margin-top: 25%;
-    margin-bottom: 25%;
+    height: 100%;
+    /* margin-top: 25%;
+    margin-bottom: 25%; */
   }
   .homeBtn {
     width: 90px;
@@ -275,8 +283,33 @@ body{
   body {
     background-color: yellow;
   }
+  #homePageSideNav {
+    display: none;
+  }
+  #homePageSideNavBtn {
+    display: none;
+  }
+  #homePageSideNavSiteLogo {
+    display: none;
+  }
   #homePageContentContainer{
     min-width: 740px;
+  }
+  #homePageMenuNav {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 0;
+  }
+  #homePageMenuNav li{
+    height: 5%;
+    border-bottom: 1px black solid;
+  }
+  .siteHeaderLogo {
+    margin: 0;
+  }
+  .menuNavLink {
+    margin: 0;
   }
 }
 
