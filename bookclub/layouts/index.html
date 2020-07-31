@@ -12,16 +12,16 @@
 <body>
   {{ partial "header/header.html" . }}
   <div id="homePageContainer" class="flex-container-centered">
-    <main id="homePageContentContainer">
+    <main id="homePageContentContainer" role="main">
       <!-- Main content for Homepage -->
       <div id="homeContent" class="flex-container-centered flex-column content">
-        <div id="homeMissionStatement">
-          <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a posuere massa. Praesent sed nunc porta, condimentum lacus at, ullamcorper ante. Vestibulum non ligula malesuada, venenatis metus at, sollicitudin magna. Etiam dictum rutrum leo quis tincidunt.</q>
+        <div id="homeMissionStatement" role="complementary">
+          <h6><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a posuere massa. Praesent sed nunc porta, condimentum lacus at, ullamcorper ante. Vestibulum non ligula malesuada, venenatis metus at, sollicitudin magna. Etiam dictum rutrum leo quis tincidunt.</q></h6>
         </div>
         <div id="homeBtnContainer" class="flex-container-centered content">
-          <a class="homeBtn flex-container-centered" href="https://www.reddit.com/r/TraumaBookClub/" target="_blank">Reddit</a>
-          <a class="homeBtn flex-container-centered" href="https://www.patreon.com/cptsdbookclub" target="_blank">Donate</a>
-          <a class="homeBtn flex-container-centered" href="https://docs.google.com/forms/d/e/1FAIpQLSdsAixFJn9p6v82Ed2Z9BEw-ERnZuTW6LN6wQRucPrSKDdUQA/viewform" target="_blank">Get a Book</a>
+          <a class="homeBtn flex-container-centered" role="button" href="https://www.reddit.com/r/TraumaBookClub/" target="_blank">Reddit</a>
+          <a class="homeBtn flex-container-centered" role="button" href="https://www.patreon.com/cptsdbookclub" target="_blank">Donate</a>
+          <a class="homeBtn flex-container-centered" role="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdsAixFJn9p6v82Ed2Z9BEw-ERnZuTW6LN6wQRucPrSKDdUQA/viewform" target="_blank">Get a Book</a>
         </div>
       </div>
     </main>

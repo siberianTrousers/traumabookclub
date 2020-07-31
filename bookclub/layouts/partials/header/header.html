@@ -10,22 +10,30 @@
 
   <body>
     <div id="partialHeaderContainer">
-      <ul id="homePageMenuNav" role="navigation">
-        <li class="siteHeaderLogo"><a href="#">Trauma Book Club</a></li>
-        <li class="menuNavLink"><a href="main/faq">FAQ</a></li>
-        <li class="last-nav-link"><a href="main/about">Security</a></li>
+      <!-- Regular nav  -->
+      <ul id="homePageMenuNav" role="list">
+        <li class="siteHeaderLogo" role="listitem"><a role="link" href="#">Trauma Book Club</a></li>
+        <li class="menuNavLink" role="listitem"><a role="link" href="/main/sessions">Sessions</a></li>
+        <li class="menuNavLink" role="listitem"><a role="link" href="/main/security">Security</a></li>
+        <li class="menuNavLink" role="listitem"><a role="link" href="/main/about">About</a></li>
+        <li class="last-nav-link" role="listitem"><a role="link" href="/main/faq">FAQ</a></li>
       </ul>
 
       <!-- Hidden nav drawer for smaller screens -->
-      <div id="homePageSideNav" class="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:35px;cursor:pointer">&times;</a>
-        <a href="main/faq">FAQ</a>
-        <a href="main/about">About Us</a>
+      <div role="navigation">
+        <div id="homePageSideNav" class="sideNav">
+          <a role="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:35px;cursor:pointer">&times;</a>
+          <a role="link" href="#">Sessions</a>
+          <a role="link" href="#">Security</a>
+          <a role="link" href="#">About</a>
+          <a role="link" href="#">FAQ</a>
+        </div>
+        <div id="homePageSideNavBtnContainer">
+          <span id="homePageSideNavBtn" aria-label="Open the menu" aria-hidden="true" onclick="openNav()">&#9776;</span>
+          <span id="homePageSideNavSiteLogo" class="siteHeaderLogo"><a role="link" href="#">Trauma Book Club</a></span>
+        </div>
       </div>
-      <div id="homePageSideNavBtnContainer">
-        <span id="homePageSideNavBtn" style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <span id="homePageSideNavSiteLogo" class="siteHeaderLogo"><a href="#">Trauma Book Club</a></span>
-      </div>
+
 
     </div>
   </body>

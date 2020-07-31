@@ -48,7 +48,7 @@ body {
   white-space: pre;
   text-align: left;
   transition: 0.5s;
-  background-color: rgba(44, 78, 82, .95);
+  background-color: rgba(97, 89, 87, .95);
 }
 .sideNav a {
   display: block;
@@ -58,7 +58,7 @@ body {
   color: white;
 }
 .sideNav a:hover {
-  color: lightgrey;
+  color: #FFEBE6;
 }
 .closebtn {
   position: absolute;
@@ -79,11 +79,7 @@ body {
   cursor: pointer;
 }
 #homePageSideNavBtn:hover {
-  color: lightgrey;
-  transition: 0.5s;
-}
-#homePageSideNavBtn:hover {
-  color: lightgrey;
+  color: #615957;
   transition: 0.5s;
 }
 #homePageSideNavBtn:active {
@@ -158,9 +154,6 @@ body {
   padding: 35px;
   font-size: 25px;
 }
-#homeBtnContainer {
-
-}
 .homeBtn {
   white-space: pre;
   white-space: -moz-pre-wrap;
@@ -183,55 +176,7 @@ body {
   color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MEDIA QUERIES CSS */
 @media only screen and (max-width: 961px) {
   #homePageMenuNav {
     display: none;
@@ -276,41 +221,3 @@ body {
     width: 80px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-dsfds
