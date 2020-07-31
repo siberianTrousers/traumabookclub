@@ -1,0 +1,227 @@
+body, html {
+  height:100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: helvetica;
+  background-image: linear-gradient(-80deg, white, #FCE9E3);
+}
+.container, #homePageContainer  {
+  flex: 1 0 auto;
+}
+#partialHeaderContainer, #partialFooterContainer {
+  flex-shrink: 1;
+  text-align: center;
+}
+
+/*PARTIAL CSS*/
+#partialHeaderContainer {
+}
+#partialFooterContainer {
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-top: 1px black solid;
+}
+
+/* FLEX CSS CLASSES */
+.flex-container-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SIDENAV CSS */
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0; left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  white-space: pre;
+  text-align: left;
+  transition: 0.5s;
+  background-color: rgba(44, 78, 82, .95);
+}
+.sideNav a {
+  display: block;
+  padding-left: 15px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+.sideNav a:hover {
+  color: lightgrey;
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+#homePageSideNavBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  box-shadow: 0px 5px 10px -9px black;
+}
+#homePageSideNavBtn {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+#homePageSideNavBtn:hover {
+  color: lightgrey;
+  transition: 0.5s;
+}
+#homePageSideNavBtn:hover {
+  color: lightgrey;
+  transition: 0.5s;
+}
+#homePageSideNavBtn:active {
+  color: black;
+  transition: 0.5s;
+}
+#homePageSideNavBtnContainer .siteHeaderLogo {
+  font-size: 15px;
+  margin-right: 0;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#homePageSideNavBtnContainer .siteHeaderLogo a {
+  text-decoration: none;
+  color: black;
+}
+
+/* REGULAR NAV CSS */
+#homePageMenuNav {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0px 5px 10px -9px black;
+  background-color: white;
+}
+#homePageMenuNav li {
+  padding: 10px;
+  text-transform: capitalize;
+}
+#homePageMenuNav a {
+  text-decoration: none;
+  color: darkgray;
+}
+#homePageMenuNav .siteHeaderLogo {
+  margin-right: auto;
+  margin-left: -40px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.menuNavLink {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.last-nav-link {
+  margin-right: 30px;
+}
+
+
+/* HOME PAGE CSS */
+#homePageContainer {
+  position: relative;
+  min-height: 60vh;
+}
+#homePageContentContainer {
+  width: 65%;
+  padding: 3%;
+}
+.content {
+  padding: 10%;
+}
+#homeContent {
+  background-color: white;
+  border-radius: .5em;
+  box-shadow: 5px 5px 15px -10px black;
+}
+#homeMissionStatement {
+  background-color: rgba(252, 233, 227, .1);
+  box-shadow: 5px 5px 10px -10px black;
+  border-radius: .50em;
+  font-style: italic;
+  padding: 35px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0) {
+  #homePageMenuNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  #homePageSideNav, #homePageSideNavBtnContainer {
+    display: none;
+  }
+  #homePageMenuNav {
+    display: flex;
+  }
+}

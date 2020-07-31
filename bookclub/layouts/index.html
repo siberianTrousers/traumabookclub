@@ -10,29 +10,9 @@
     <title id="partialHead">{{ .Title }}</title>
 </head>
 <body>
+  {{ partial "header/header.html" . }}
   <div id="homePageContainer" class="flex-container-centered">
     <main id="homePageContentContainer">
-      <!-- Normal screen nav -->
-      <ul id="homePageMenuNav" role="navigation">
-        <a class="siteHeaderLogo" href="/"><li>Trauma Book Club</li></a>
-        <a class="menuNavLink" href="main/faq"><li>FAQ</li></a>
-        <a class="last-nav-link" href=""><li>Security Protocol</li></a>
-
-
-
-      </ul>
-
-      <!-- Hidden nav drawer for smaller screens -->
-      <div id="homePageSideNav" class="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:35px;cursor:pointer">&times;</a>
-        <a href="main/faq">FAQ</a>
-        <a href="main/about">About Us</a>
-      </div>
-      <div id="homePageSideNavBtnContainer">
-        <span id="homePageSideNavBtn" onclick="openNav()">&#9776;</span>
-        <span id="homePageSideNavSiteLogo" class="siteHeaderLogo"><a href="#">Trauma Book Club</a></span>
-      </div>
-
       <!-- Main content for Homepage -->
       <div id="homeContent" class="flex-container-centered flex-column content">
         <div id="homeMissionStatement">
@@ -45,10 +25,8 @@
         </div>
       </div>
     </main>
-    {{ partial "footer/footer.html" . }}
   </div>
-
-
+  {{ partial "footer/footer.html" . }}
   {{ $script := "js/javascript.js" | absURL }}
   <script src="{{ $script }}"></script>
 </body>
