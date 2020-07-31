@@ -70,6 +70,7 @@ body {
   justify-content: space-between;
   padding-bottom: 3px;
   box-shadow: 0px 5px 10px -9px black;
+  background-color: white;
 }
 #homePageSideNavBtn {
   padding-left: 10px;
@@ -115,7 +116,7 @@ body {
 }
 #homePageMenuNav a {
   text-decoration: none;
-  color: darkgray;
+  color: #4A6263;
 }
 #homePageMenuNav .siteHeaderLogo {
   margin-right: auto;
@@ -155,7 +156,31 @@ body {
   border-radius: .50em;
   font-style: italic;
   padding: 35px;
-  font-size: 20px;
+  font-size: 25px;
+}
+#homeBtnContainer {
+
+}
+.homeBtn {
+  white-space: pre;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  margin: 0 50px 0;
+  padding: 30px;
+  width: 135%;
+  border: 2px solid #D1C1BC;
+  border-radius: .25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #7B5C5A;
+}
+.homeBtn:hover {
+  box-shadow: 5px 5px 13px -10px black;
+  background-color: #E8E3E3;
+  transition: 0.2s;
+  color: black;
 }
 
 
@@ -207,17 +232,33 @@ body {
 
 
 
-
-
-
-
-@media only screen and (min-width: 0) {
+@media only screen and (max-width: 961px) {
   #homePageMenuNav {
     display: none;
   }
-}
+  #homePageContentContainer {
+    width: 100%;
+  }
+  #homeContent div{
 
-@media only screen and (min-width: 961px) {
+  }
+  #homeMissionStatement {
+    font-size: 15px;
+  }
+  #homeBtnContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .homeBtn {
+    margin: 8px;
+    padding: 12px;
+    width: 50%;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 962px) {
   #homePageSideNav, #homePageSideNavBtnContainer {
     display: none;
   }
@@ -225,3 +266,51 @@ body {
     display: flex;
   }
 }
+@media only screen and (min-width: 962px) and (max-width: 1281px) {
+  #homeMissionStatement {
+    width: 99%;
+  }
+  .homeBtn {
+    margin: 0 7% 0;
+    font-size: 15px;
+    width: 80px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dsfds
