@@ -4,7 +4,7 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {{ $css := "css/bootstrap.min.css" | absURL }}
+    {{ $css := "css/maincss.css" | absURL }}
     <link rel="stylesheet" href="{{ $css }}">
 
     <title id="partialHead">{{ .Title }}</title>
@@ -44,10 +44,10 @@
           <a class="homeBtn flex-container-centered" href="https://docs.google.com/forms/d/e/1FAIpQLSdsAixFJn9p6v82Ed2Z9BEw-ERnZuTW6LN6wQRucPrSKDdUQA/viewform" target="_blank">Get a Book</a>
         </div>
       </div>
-
     </main>
+    {{ partial "footer/footer.html" . }}
   </div>
-  {{ partial "footer/footer.html" . }}
+
 
   {{ $script := "js/javascript.js" | absURL }}
   <script src="{{ $script }}"></script>
