@@ -16,15 +16,24 @@
       <!-- Main content for Homepage -->
       <div id="homeContent" class="flex-container-centered flex-column content">
         <div id="homeMissionStatement" role="complementary">
-          <h6><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a posuere massa. Praesent sed nunc porta, condimentum lacus at, ullamcorper ante. Vestibulum non ligula malesuada, venenatis metus at, sollicitudin magna. Etiam dictum rutrum leo quis tincidunt.</q></h6>
+          <q>The TraumaBookClub is an online mental health support network for trauma survivors. We are secondarily a platform for advocacy about trauma and it’s often-unrecognized impact on our loved ones. The project is designed and maintained by a small team of volunteers, who are all survivors of Complex Post Traumatic Stress Disorder. </q>
         </div>
         <div id="homeBtnContainer" class="flex-container-centered content">
           <a class="homeBtn flex-container-centered" role="button" href="https://www.reddit.com/r/TraumaBookClub/" target="_blank">Reddit</a>
-          <a class="homeBtn flex-container-centered" role="button" href="https://www.patreon.com/cptsdbookclub" target="_blank">Donate</a>
+          <!-- <button type="button" class="homeBtn flex-container-centered" role="button" id="donateBtn">donate</button> -->
+          <a class="homeBtn flex-container-centered" role="button" id="donateBtn" href="#">Donate</a>
           <a class="homeBtn flex-container-centered" role="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdsAixFJn9p6v82Ed2Z9BEw-ERnZuTW6LN6wQRucPrSKDdUQA/viewform" target="_blank">Get a Book</a>
         </div>
       </div>
     </main>
+    <!-- Modal for Donate Button -->
+     <div id="donateModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="modalCloseBtn">&times;</span>
+        <a href="https://www.paypal.com/paypalme/cptsdbookclub">Paypal</a>
+        <a href="https://www.patreon.com/cptsdbookclub">Patreon</a>
+      </div>
+    </div>
   </div>
   {{ partial "footer/footer.html" . }}
   {{ $script := "js/javascript.js" | absURL }}

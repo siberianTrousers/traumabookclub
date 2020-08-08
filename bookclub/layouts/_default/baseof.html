@@ -9,5 +9,7 @@
       </main>
     </div>
     {{ partial "footer/footer.html" . }}
+    {{ $script := "js/javascript.js" | absURL }}
+    <script src="{{ $script }}"></script>
   </body>
 </html>
