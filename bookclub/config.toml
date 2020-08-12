@@ -1,0 +1,6 @@
+baseURL = "http://traumabook.Club/"
+languageCode = "en-us"
+title = "Trauma Book Club"
+
+[params]
+  homeText = "This is the hometext"
