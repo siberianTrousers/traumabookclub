@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: helvetica;
-  background-image: linear-gradient(-80deg, white, #FCE9E3);
+  background-image: linear-gradient(-90deg, white, #FFD5E3);
 }
 .container, #homePageContainer  {
   flex: 1 0 auto;
@@ -25,7 +25,7 @@ body {
   border-top: 1px black solid;
 }
 
-/* FLEX CSS CLASSES */
+/* GENERAL CSS CLASSES */
 .flex-container-centered {
   display: flex;
   justify-content: center;
@@ -34,6 +34,27 @@ body {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+.btn-design {
+  border: 2px solid #D1C1BC;
+  border-radius: .25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #7B5C5A;
+}
+.btn-design:hover {
+  box-shadow: 5px 5px 13px -10px black;
+  background-color: #E8E3E3;
+  transition: 0.2s;
+  color: black;
+}
+.basic-border {
+  border-radius: .5em;
+  box-shadow: 5px 5px 15px -10px black;
+}
+.single-page-list {
+  margin-right: 40px;
 }
 
 /* SIDENAV CSS */
@@ -108,26 +129,49 @@ body {
   z-index: 1;
   width: 100%;
   overflow: auto;
+  height: 100%;
 }
 .modal-content {
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  background-image: linear-gradient(90deg, white, #FFFAFF);
+  border: 1px solid #E0E0E0;
+  border-radius: .5em;
+  width: 350px;
+  text-align: center;
+  box-shadow: 5px 5px 15px -10px black;
+
+}
+.modal-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: white;
+  box-shadow: 0px 5px 7px -9px black;
+  padding: 2px;
+}
+#donateOptions {
+ padding: 25px 0 25px;
+ width: 80% !important;
+ margin: auto;
+}
+#donateOptions a{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 #modalCloseBtn {
   cursor: pointer;
 }
 .close {
-  color: #aaa;
+  color: #5C5C5C;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-right: 10px;
 }
-
-.close:hover,
-.close:focus {
-  color: black;
+.close:hover, .close:focus {
+  color: #30282C;
   text-decoration: none;
   cursor: pointer;
 }
@@ -141,8 +185,11 @@ body {
   background-color: white;
 }
 #homePageMenuNav li {
+  display: flex;
   padding: 10px;
   text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
 }
 #homePageMenuNav a {
   text-decoration: none;
@@ -187,9 +234,8 @@ body {
   font-style: italic;
   padding: 35px;
   font-size: 25px;
-}
-#donateBtn {
-  background-color: white;
+  letter-spacing: .03em;
+  line-height: 1.3em;
 }
 .homeBtn {
   white-space: pre;
@@ -198,20 +244,25 @@ body {
   word-wrap: break-word;
   margin: 0 50px 0;
   padding: 30px;
-  width: 250px;
-  /* width: 135%; */
-  border: 2px solid #D1C1BC;
-  border-radius: .25em;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  color: #7B5C5A;
+  width: 125px;
 }
-.homeBtn:hover {
-  box-shadow: 5px 5px 13px -10px black;
-  background-color: #E8E3E3;
-  transition: 0.2s;
-  color: black;
+
+/* SINGLE PAGE CSS */
+.singlePageContent {
+  font-size: .90em;
+  margin: 50px;
+  padding: 10px 50px 50px;
+  background-color: rgba(255, 255, 255, .75);
+}
+.singlePageHeader {
+  text-align: center;
+}
+
+
+/* LIST CSS */
+.firstTierTitle {
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 /* MEDIA QUERIES CSS */
@@ -236,6 +287,10 @@ body {
     width: 50%;
     font-size: 15px;
   }
+  .singlePageContent {
+    margin: 9px 0 9px;
+    padding: 9px 0 9px;
+  }
 }
 @media only screen and (min-width: 962px) {
   #homePageSideNav, #homePageSideNavBtnContainer {
@@ -243,6 +298,9 @@ body {
   }
   #homePageMenuNav {
     display: flex;
+  }
+  #homeMissionStatement {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 962px) and (max-width: 1092px) {
@@ -262,5 +320,10 @@ body {
     margin: 0 7% 0;
     font-size: 15px;
     width: 80px;
+  }
+}
+@media only screen and (min-width: 1282px) and (max-width: 1500px) {
+  .homeBtn {
+    width: 85px;
   }
 }

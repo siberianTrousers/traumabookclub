@@ -12,13 +12,8 @@ var modalBtn = document.getElementById("donateBtn");
 var span = document.getElementsByClassName("close")[0];
 
 modalBtn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.cssText = "display: flex;align-items: center;justify-content: center;"
 }
 span.onclick = function() {
   modal.style.display = "none";
 }
-// window.onclick = function(event) {
-//   if(event.target ==  modal) {
-//     modal.style.display = "none";
-//   }
-// }
