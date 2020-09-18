@@ -8,14 +8,19 @@
 
   </head>
 
-  <body>
-    <div id="partialHeaderContainer">
+  <body role="document">
+    <div id="partialHeaderContainer" role="heading">
       <!-- Regular nav  -->
-      <ul id="homePageMenuNav" role="list">
-        <li class="siteHeaderLogo" role="listitem"><a role="link" href="/">Trauma Book Club</a></li>
-        <li class="menuNavLink" role="listitem"><a role="link" href="/main/sessions">Sessions</a></li>
-        <li class="menuNavLink" role="listitem"><a role="link" href="/main/security">Security</a></li>
-        <li class="last-nav-link" role="listitem"><a role="link" href="/main/faq">FAQ</a></li>
+      <ul id="homePageMenuNav">
+        <li class="siteHeaderLogo"><a href="/">Trauma Book Club</a></li>
+        <li class="menuNavLink dropdown-menu"><a class="dropdownBtn" href="#">Chapters</a>
+          <ul class="dropdown-content">
+            <li><a class="dropdown-item" href="#">Chapter 1</a></li>
+          </ul>
+        </li>
+        <li class="menuNavLink"><a href="/main/sessions">Sessions</a></li>
+        <li class="menuNavLink"><a href="/main/security">Security</a></li>
+        <li class="menuNavLink"><a href="/main/faq">FAQ</a></li>
       </ul>
 
       <!-- Hidden nav drawer for smaller screens -->
