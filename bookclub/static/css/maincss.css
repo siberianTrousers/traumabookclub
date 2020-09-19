@@ -71,6 +71,9 @@ body {
   transition: 0.5s;
   background-color: rgba(97, 89, 87, .95);
 }
+.sideNav ul {
+  list-style: none;;
+}
 .sideNav a {
   display: block;
   padding-left: 15px;
@@ -183,14 +186,17 @@ body {
   list-style: none;
   box-shadow: 0px 5px 10px -9px black;
   background-color: white;
-  overflow: hidden;
 }
 #homePageMenuNav li {
   display: flex;
-  padding: 10px;
+  padding: 10px 0;
+  width: 150px;
   text-transform: capitalize;
   align-items: center;
   justify-content: center;
+}
+#homePageMenuNav li:not(.siteHeaderLogo):hover {
+  background-color: #E8E3E3;
 }
 #homePageMenuNav a {
   text-decoration: none;
@@ -201,6 +207,7 @@ body {
   margin-left: -40px;
   font-weight: bold;
   font-size: 25px;
+  width: 250px;
 }
 .menuNavLink {
   margin-left: 30px;
@@ -210,27 +217,27 @@ body {
 
 /* DROPDOWN CSS */
 .dropdown-menu {
-  overflow: hidden;
+  display: block;
+  position: relative;
 }
 .dropdown-content {
+  padding: 0;
+  width: 150px;
+  border-top: none;
+  box-shadow: 0px 5px 10px -9px black;
+}
+.dropdown-item {
   background-color: white;
-  position: absolute;
+  padding: 15px 0 !important;
+}
+
+ul li ul {
   visibility: hidden;
   display: none;
+  position: absolute;
   opacity: 0;
-  margin-top: 85px;
-  width: 150px;
-  float: left;
-  box-shadow: 5px 8px 13px -10px black;
-  transition: all 1s ease;
-}
-.dropdown-content, .dropdown-item {
-  padding: 0;
-}
-.dropdown-menu:hover .dropdown-content {
-  visibility: visible;
-  opacity: 1;
-  display: block;
+  z-index: 1;
+  top: 48px;
 
 }
 ul li:hover > ul,
@@ -239,6 +246,10 @@ ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: block;
+}
+ul li ul li {
+  clear: both;
+  width: 100%;
 }
 
 /* HOME PAGE CSS */
