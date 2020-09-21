@@ -291,7 +291,7 @@ ul li ul li {
 
 /* SINGLE PAGE CSS */
 .singlePageContent {
-  font-size: .90em;
+  font-size: 1em;
   margin: 50px;
   padding: 10px 50px 50px;
   background-color: rgba(255, 255, 255, .75);
@@ -302,9 +302,23 @@ ul li ul li {
 
 
 /* LIST CSS */
+.single-page-list li {
+  margin-bottom: 15px;
+}
 .firstTierTitle {
   font-size: 15px;
   text-transform: uppercase;
+}
+.firstTierDetail {
+  margin-bottom: 50px;
+}
+.second-tier-list {
+  margin-top: 5px;
+  list-style-type: square;
+}
+
+.secondTierDetail {
+
 }
 
 /* MEDIA QUERIES CSS */
@@ -331,7 +345,7 @@ ul li ul li {
   }
   .singlePageContent {
     margin: 9px 0 9px;
-    padding: 9px 0 9px;
+    padding: 9px 9px 9px;
   }
 }
 @media only screen and (min-width: 962px) {
