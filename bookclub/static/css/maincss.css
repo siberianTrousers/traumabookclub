@@ -71,6 +71,9 @@ body {
   transition: 0.5s;
   background-color: rgba(97, 89, 87, .95);
 }
+.sideNav ul {
+  list-style: none;;
+}
 .sideNav a {
   display: block;
   padding-left: 15px;
@@ -186,10 +189,14 @@ body {
 }
 #homePageMenuNav li {
   display: flex;
-  padding: 10px;
+  padding: 10px 0;
+  width: 150px;
   text-transform: capitalize;
   align-items: center;
   justify-content: center;
+}
+#homePageMenuNav li:not(.siteHeaderLogo):hover {
+  background-color: #E8E3E3;
 }
 #homePageMenuNav a {
   text-decoration: none;
@@ -200,15 +207,50 @@ body {
   margin-left: -40px;
   font-weight: bold;
   font-size: 25px;
+  width: 250px;
 }
 .menuNavLink {
   margin-left: 30px;
   margin-right: 30px;
 }
-.last-nav-link {
-  margin-right: 30px;
+
+
+/* DROPDOWN CSS */
+.dropdown-menu {
+  display: block;
+  position: relative;
+}
+.dropdown-content {
+  padding: 0;
+  width: 150px;
+  border-top: none;
+  box-shadow: 0px 5px 10px -9px black;
+}
+.dropdown-item {
+  background-color: white;
+  padding: 15px 0 !important;
 }
 
+ul li ul {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  top: 48px;
+
+}
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
 
 /* HOME PAGE CSS */
 #homePageContainer {
@@ -249,7 +291,7 @@ body {
 
 /* SINGLE PAGE CSS */
 .singlePageContent {
-  font-size: .90em;
+  font-size: 1em;
   margin: 50px;
   padding: 10px 50px 50px;
   background-color: rgba(255, 255, 255, .75);
@@ -260,9 +302,23 @@ body {
 
 
 /* LIST CSS */
+.single-page-list li {
+  margin-bottom: 15px;
+}
 .firstTierTitle {
   font-size: 15px;
   text-transform: uppercase;
+}
+.firstTierDetail {
+  margin-bottom: 50px;
+}
+.second-tier-list {
+  margin-top: 5px;
+  list-style-type: square;
+}
+
+.secondTierDetail {
+
 }
 
 /* MEDIA QUERIES CSS */
@@ -289,7 +345,7 @@ body {
   }
   .singlePageContent {
     margin: 9px 0 9px;
-    padding: 9px 0 9px;
+    padding: 9px 9px 9px;
   }
 }
 @media only screen and (min-width: 962px) {

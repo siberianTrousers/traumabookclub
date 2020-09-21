@@ -8,29 +8,45 @@
 
   </head>
 
-  <body>
-    <div id="partialHeaderContainer">
+  <body role="document">
+    <div id="partialHeaderContainer" role="heading">
       <!-- Regular nav  -->
-      <ul id="homePageMenuNav" role="list">
-        <li class="siteHeaderLogo" role="listitem"><a role="link" href="/">Trauma Book Club</a></li>
-        <li class="menuNavLink" role="listitem"><a role="link" href="/main/sessions">Sessions</a></li>
-        <li class="menuNavLink" role="listitem"><a role="link" href="/main/security">Security</a></li>
-        <li class="last-nav-link" role="listitem"><a role="link" href="/main/faq">FAQ</a></li>
-      </ul>
+      <nav role="navigation">
+        <ul id="homePageMenuNav">
+          <li class="siteHeaderLogo"><a href="/">Trauma Book Club</a></li>
+          <li class="dropdown-menu menuNavLink"><a class="dropdownBtn" href="#">Chapters</a>
+            <ul class="dropdown-content">
+              <li class="dropdown-item"><a href="/chapters/chapter1">Chapter 1</a></li>
+            </ul>
+          </li>
+          <li class="menuNavLink"><a href="/main/sessions">Session Protocol</a></li>
+          <li class="menuNavLink"><a href="/main/security">Security</a></li>
+          <li class="menuNavLink"><a href="/main/faq">FAQ</a></li>
+        </ul>
+      </nav>
 
       <!-- Hidden nav drawer for smaller screens -->
-      <div role="navigation">
+      <nav role="navigation">
         <div id="homePageSideNav" class="sideNav">
-          <a role="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a role="link" href="/main/sessions">Sessions</a>
-          <a role="link" href="/main/security">Security</a>
-          <a role="link" href="/main/faq">FAQ</a>
+            <ul>
+              <li><a role="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+              <!-- <li><a href="#">Chapters
+                <ul>
+                  <li><a href="#">Chapter 1</a></li>
+                </ul>
+              </a></li> -->
+              <li><a role="link" href="/main/sessions">Session Protocol</a></li>
+              <li><a role="link" href="/main/security">Security</a></li>
+              <li><a role="link" href="/main/faq">FAQ</a></li>
+            </ul>
         </div>
         <div id="homePageSideNavBtnContainer">
           <span id="homePageSideNavBtn" aria-label="Open the menu" aria-hidden="true" onclick="openNav()">&#9776;</span>
           <span id="homePageSideNavSiteLogo" class="siteHeaderLogo"><a role="link" href="/">Trauma Book Club</a></span>
         </div>
-      </div>
+      </nav>
+
+
     </div>
   </body>
 </html>
