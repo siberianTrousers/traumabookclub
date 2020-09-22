@@ -29,24 +29,24 @@
       <nav role="navigation">
         <div id="homePageSideNav" class="sideNav">
             <ul>
-              <li><a role="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-              <!-- <li><a href="#">Chapters
-                <ul>
-                  <li><a href="#">Chapter 1</a></li>
-                </ul>
-              </a></li> -->
-              <li><a role="link" href="/main/sessions">Session Protocol</a></li>
-              <li><a role="link" href="/main/security">Security</a></li>
-              <li><a role="link" href="/main/faq">FAQ</a></li>
+              <li><a role="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close menu" aria-hidden="true">&times;</a></li>
+              <li><a href="#" onclick="openSubNav()">Chapters</a></li>
+              <li><a href="/main/sessions">Session Protocol</a></li>
+              <li><a href="/main/security">Security</a></li>
+              <li><a href="/main/faq">FAQ</a></li>
             </ul>
+            <div id="homePageSideNavSubMenu" class="subMenu">
+              <ul>
+                <li><a role="link" href="javascript:void(0)" class="closebtn" onclick="closeSubNav()" aria-label="Back to menu" aria-hidden="true">&#8617;</a></li>
+                <li><a href="/chapters/chapter1">Chapter 1</a></li>
+              </ul>
+            </div>
         </div>
         <div id="homePageSideNavBtnContainer">
           <span id="homePageSideNavBtn" aria-label="Open the menu" aria-hidden="true" onclick="openNav()">&#9776;</span>
           <span id="homePageSideNavSiteLogo" class="siteHeaderLogo"><a role="link" href="/">Trauma Book Club</a></span>
         </div>
       </nav>
-
-
     </div>
   </body>
 </html>

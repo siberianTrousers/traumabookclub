@@ -5,6 +5,12 @@ function openNav() {
 function closeNav() {
   document.getElementById("homePageSideNav").style.width = "0";
 }
+function openSubNav() {
+  document.getElementById("homePageSideNavSubMenu").style.width = "250px";
+}
+function closeSubNav() {
+  document.getElementById("homePageSideNavSubMenu").style.width = "0";
+}
 
 // MODAL
 var modal = document.getElementById("donateModal");

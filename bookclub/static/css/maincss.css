@@ -64,7 +64,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0; left: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 60px;
   white-space: pre;
   text-align: left;
@@ -72,12 +72,12 @@ body {
   background-color: rgba(97, 89, 87, .95);
 }
 .sideNav ul {
-  list-style: none;;
+  list-style: none;
 }
 .sideNav a {
   display: block;
-  padding-left: 15px;
   font-size: 25px;
+  margin: 10px 0;
   text-decoration: none;
   color: white;
 }
@@ -88,7 +88,7 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size:35px;
+  font-size: 45px !important;
   cursor:pointer
 }
 #homePageSideNavBtnContainer {
@@ -123,6 +123,20 @@ body {
   text-decoration: none;
   color: black;
 }
+.subMenu {
+  background-color: rgb(97, 89, 87);
+  z-index: 500;
+  height: 100%;
+  width: 0;
+  top: 0; left: 0;
+  position: absolute;
+  overflow: hidden;
+  padding-top: 60px;
+  white-space: pre;
+  text-align: left;
+  transition: 0.5s;
+}
+
 
 /* MODAL CSS */
 .modal {
@@ -231,7 +245,7 @@ body {
   padding: 15px 0 !important;
 }
 
-ul li ul {
+#homePageMenuNav .dropdown-menu .dropdown-content {
   visibility: hidden;
   display: none;
   position: absolute;
@@ -240,14 +254,14 @@ ul li ul {
   top: 48px;
 
 }
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover {
+#homePageMenuNav .dropdown-menu:hover > .dropdown-content,
+#homePageMenuNav .dropdown-menu:focus-within > .dropdown-content,
+#homePageMenuNav .dropdown-menu .dropdown-content:hover {
   visibility: visible;
   opacity: 1;
   display: block;
 }
-ul li ul li {
+#homePageMenuNav .dropdown-menu .dropdown-content dropdown-item {
   clear: both;
   width: 100%;
 }
@@ -313,18 +327,15 @@ ul li ul li {
   margin-bottom: 50px;
 }
 .first-tier-list {
-  
-}
 
+}
 .second-tier-list {
   margin-top: 5px;
   list-style-type: circle;
 }
-
 .secondTierDetail {
 
 }
-
 .third-tier-list {
   margin-top: 5px;
   list-style-type: lower-alpha;
