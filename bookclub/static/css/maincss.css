@@ -312,13 +312,22 @@ ul li ul li {
 .firstTierDetail {
   margin-bottom: 50px;
 }
+.first-tier-list {
+  
+}
+
 .second-tier-list {
   margin-top: 5px;
-  list-style-type: square;
+  list-style-type: circle;
 }
 
 .secondTierDetail {
 
+}
+
+.third-tier-list {
+  margin-top: 5px;
+  list-style-type: lower-alpha;
 }
 
 /* MEDIA QUERIES CSS */
