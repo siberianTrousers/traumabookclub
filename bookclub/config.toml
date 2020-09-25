@@ -1,4 +1,4 @@
-baseURL = "https://jenram20.github.io/traumabookclub/"
+baseURL = "cptsdbook.club"
 languageCode = "en-us"
 title = "Trauma Book Club"
 publishDir = "bookclub"
