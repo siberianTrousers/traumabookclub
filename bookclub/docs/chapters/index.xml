@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapters on Trauma Book Club</title>
+    <link>https://jenram20.github.io/traumabookclub/chapters/</link>
+    <description>Recent content in Chapters on Trauma Book Club</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Sep 2020 14:45:38 -0700</lastBuildDate>
+    
+	<atom:link href="https://jenram20.github.io/traumabookclub/chapters/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chapter1</title>
+      <link>https://jenram20.github.io/traumabookclub/chapters/chapter1/</link>
+      <pubDate>Mon, 21 Sep 2020 14:45:38 -0700</pubDate>
+      
+      <guid>https://jenram20.github.io/traumabookclub/chapters/chapter1/</guid>
+      <description>Complex PTSD - Chapter 01 Definition Of Complex PTSD CPTSD is environmentally caused, not genetically. It is a learned set of maladaptive responses and a failure to complete numerous developmental tasks. This means that the behaviours/symptoms/maladaptations can be “unlearned”.   The book is oriented towards &#34;the most prevalent kind of CPTSD&#34;. Thus focuses on healing damage from abuse and abandonment that is rooted mostly in childhood trauma and abuse/neglect   Recovery has crucial self-help and relational components.</description>
+    </item>
+    
+  </channel>
+</rss>
