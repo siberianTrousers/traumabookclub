@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{ $css := "css/maincss.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css }}">
-
-  </head>
+{{ partial "head/head.html" . }}
 
   <body role="document">
     <div id="partialHeaderContainer" role="heading">
@@ -14,7 +8,7 @@
       <nav role="navigation">
         <ul id="homePageMenuNav">
           <li class="siteHeaderLogo"><a href="/">Trauma Book Club</a></li>
-          <li class="dropdown-menu menuNavLink"><a class="dropdownBtn" href="#">Chapters</a>
+          <li class="dropdown-menu menuNavLink"><a class="dropdownBtn" href="">Chapters</a>
             <ul class="dropdown-content">
               <li class="dropdown-item"><a href="/chapters/chapter1">Chapter 1</a></li>
             </ul>
