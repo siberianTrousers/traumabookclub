@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trauma Book Club</title>
+    <link>https://traumabook.club/</link>
+    <description>Recent content on Trauma Book Club</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Sep 2020 14:45:38 -0700</lastBuildDate>
+    
+	<atom:link href="https://traumabook.club/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chapter1</title>
+      <link>https://traumabook.club/chapters/chapter1/</link>
+      <pubDate>Mon, 21 Sep 2020 14:45:38 -0700</pubDate>
+      
+      <guid>https://traumabook.club/chapters/chapter1/</guid>
+      <description>Complex PTSD - Chapter 01 Definition Of Complex PTSD CPTSD is environmentally caused, not genetically. It is a learned set of maladaptive responses and a failure to complete numerous developmental tasks. This means that the behaviours/symptoms/maladaptations can be “unlearned”.   The book is oriented towards &#34;the most prevalent kind of CPTSD&#34;. Thus focuses on healing damage from abuse and abandonment that is rooted mostly in childhood trauma and abuse/neglect   Recovery has crucial self-help and relational components.</description>
+    </item>
+    
+    <item>
+      <title>Sessions</title>
+      <link>https://traumabook.club/main/sessions/</link>
+      <pubDate>Fri, 31 Jul 2020 15:25:00 -0700</pubDate>
+      
+      <guid>https://traumabook.club/main/sessions/</guid>
+      <description>Peer Session Protocols We do not engage in cross-talk What is cross talk Crosstalk is interrupting, giving advice, or making comments about another person’s sharing. It is also talking to someone or making distracting noise during sharing time. In TBC, we don’t crosstalk. When others share with us, just listen; our reality, our truth, our ideas, our feelings, our self-image, our beings are affirmed. When we focus only on our own recovery (keeping out of other people’s), we are taking responsibility for our own lives.</description>
+    </item>
+    
+    <item>
+      <title>Faq</title>
+      <link>https://traumabook.club/main/faq/</link>
+      <pubDate>Fri, 31 Jul 2020 15:24:33 -0700</pubDate>
+      
+      <guid>https://traumabook.club/main/faq/</guid>
+      <description>Trauma Book Club FAQ: What is the Trauma Book Club? The Trauma Book Club (TBC) is a volunteer, peer-organized online community of trauma survivors providing free and accessible resources for recovery.    What do you guys do? We run an ongoing book club to help a community of trauma survivors get through emotionally-difficult texts about recovery.  The TBC is also running a by-donation book drive to get copies of Pete Walker’s Complex PTSD: From Surviving to Thriving into the hands of people who need it.</description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://traumabook.club/main/security/</link>
+      <pubDate>Fri, 31 Jul 2020 15:22:56 -0700</pubDate>
+      
+      <guid>https://traumabook.club/main/security/</guid>
+      <description>Safety Protocols  Purpose The purpose of the safety protocol is to ensure that individuals involved in the Book Club do not expose themselves to unnecessary dangers or risks. Primarily, we are concerned about individuals being doxxed or harassed, and individuals being solicited by potential predators hiding among us.     Items Have reasonable suspicions about everyone you do not know - including the moderators and any of the TraumaBookClub team.</description>
+    </item>
+    
+  </channel>
+</rss>

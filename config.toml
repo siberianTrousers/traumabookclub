@@ -1,6 +1,7 @@
-baseURL = "http://traumabook.Club/"
+baseURL = "https://traumabook.club/"
 languageCode = "en-us"
 title = "Trauma Book Club"
+publishDir = "docs"
 
 [params]
   homeText = "This is the hometext"

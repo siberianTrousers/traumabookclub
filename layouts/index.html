@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{ partial "head/head.html" . }}
 
-    {{ $css := "css/maincss.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css }}">
-
-    <title id="partialHead">{{ .Title }}</title>
-</head>
-<body>
   {{ partial "header/header.html" . }}
   <div id="homePageContainer" class="flex-container-centered">
     <main id="homePageContentContainer" role="main">
@@ -39,7 +31,5 @@
     </div>
   </div>
   {{ partial "footer/footer.html" . }}
-  {{ $script := "js/javascript.js" | absURL }}
-  <script src="{{ $script }}"></script>
 </body>
 </html>
